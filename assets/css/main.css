@@ -253,6 +253,9 @@ a:hover {
   transition: all 0.2s linear;
 }
 
+.footer-links a {
+  margin: 0 10px;
+}
 #copyright {
   background: #F1F1F1;
   color: #333;
