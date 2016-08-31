@@ -114,6 +114,12 @@ a:hover {
 #hero-area p {
   padding: 50px 0;
 }
+
+#services p {
+  line-height: 30px;
+  font-size: 17px;
+
+}
 #services h3 {
   margin-top: 0;
   font-size: 28px;
