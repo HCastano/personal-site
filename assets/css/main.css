@@ -125,6 +125,12 @@ a:hover {
   font-size: 28px;
   color: #e74c3c;
 }
+
+#services h4 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #e74c3c;
+}
 /*Portfolio*/
 #portfolio {
   background: #f1f1f1;
@@ -272,4 +278,8 @@ a:hover {
 }
 #copyright a {
   color: #333;
+}
+
+.resume-section {
+  margin: 0 0 40px 0;
 }
