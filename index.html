@@ -24,6 +24,10 @@
 
     <!-- jQuery Load -->
     <script src="assets/js/jquery-min.js"></script>
+
+    <!-- Masonry Load -->
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!--[if lt IE 9]>
@@ -86,15 +90,6 @@
             <!-- banner image -->
             <img class="col-sm-8 col-sm-offset-2 col-xs-12 animated fadeInLeft" src="assets/img/hero/macbook.png" alt="">
 
-            <!--
-            <div class="col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5">
-              <p>Hey, how'd you get here?! Well, either way, there's nothing exiting
-              going on right now here. The site is still kinda under construction.
-              I suggest you check back in a couple weeks to see the finished
-              product. In the meantime, go outside, when was the last time you did
-              that?
-              </p>
-             -->
             </div>
           </div>
         </div>
@@ -114,7 +109,7 @@
             <p> Hey! I'm Hernando, a Mechanical Engineering student from the University of
             Waterloo. I have experience in mechanical design, and a solid background in
             software development. I enjoy going to the gym, listening to classic
-            rock, and watching shows like Game of Thrones and Doctor Who. 
+            rock, and watching shows like Game of Thrones and Doctor Who.
             I know it takes more than just being a cool guy to be
             a useful employee, so to find out a little more about my technical
             background checkout my <a href="#portfolio">projects</a> and <a
@@ -127,117 +122,215 @@
     </section>
     <!-- Service Section End -->
 
-
-
     <!-- Portfolio Section -->
 
     <section id="portfolio">
       <div class="container">
-        <div class="row">
-          <h1 class="title">Portfolio</h1>
-          <h2 class="subtitle">I've done a thing or two in my day</h2>
+          <div class="row">
+            <h1 class="title">Portfolio</h1>
+            <h2 class="subtitle">I've done a thing or two in my day</h2>
 
-          <!-- TODO: Add hover over animation back -->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-              <!-- TODO: Fix size of image on preview -->
-                <a href="#"><img src="assets/img/portfolio/HandyCleanHztl.jpg" alt=""/></a>
-                <div class="overlay">
-                <div class="icons">
-                  <a href="#" role="button" data-toggle="modal"
-                    data-target="#firstModal" class="">
-                    <!-- This image shows on the hoverover -->
-                    <img src="assets/img/portfolio/HandyCleanHztl.jpg"/>
-                  </a>
+            <!-- Masonry Section -->
+            <!-- Modified example from: https://masonry.desandro.com/extras.html -->
+            <div class="container-fluid">
+              <!-- Add extra container element for Masonry -->
+              <div class="grid">
+                <div class="grid-sizer col-xs-6 col-sm-4 col-md-3"></div>
+
+                <!-- First Image: Raven's Racing -->
+                <div class="grid-item col-xs-6 col-sm-8 col-md-6">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <!-- TODO: Fix size of image on preview for ALL images -->
+                    <a href="#"><img src="assets/img/portfolio/RR17_Autoshow.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#RR17Modal" class="">
+                          <img src="assets/img/portfolio/RR17_Autoshow.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- class="grid-item ..."-->
+
+                <!-- Second Image: Felix Game -->
+                <div class="grid-item col-xs-6 col-sm-4 col-md-5">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <a href="#"><img src="assets/img/portfolio/Felix3.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#felixModal" class="">
+                          <img src="assets/img/portfolio/Felix3.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="modal fade" id="firstModal" tabindex="-1" role="dialog">
+                <!-- Third Image: Waterloop -->
+                <div class="grid-item col-xs-6 col-sm-8 col-md-6">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <a href="#"><img src="assets/img/portfolio/Goose1.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#waterloopModal" class="">
+                          <img src="assets/img/portfolio/Goose1.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fourth Image: Myo Flight Simulator -->
+                <div class="grid-item col-xs-6 col-sm-4 col-md-3">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <a href="#"><img src="assets/img/portfolio/DoubleMyo.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#myoModal" class="">
+                          <img src="assets/img/portfolio/DoubleMyo.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fifth Image: Ryerson Rams Robotics -->
+                <div class="grid-item col-xs-6 col-sm-4 col-md-3">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <a href="#"><img src="assets/img/portfolio/RyArm2.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#ryersonModal" class="">
+                          <img src="assets/img/portfolio/RyArm2.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sixth Image: Powertrain -->
+                <div class="grid-item col-xs-6 col-sm-4 col-md-4">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <a href="#"><img src="assets/img/portfolio/KTM_450.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#ktmModal" class="">
+                          <img src="assets/img/portfolio/KTM_450.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seventh Image: Handy Dandy -->
+                <div class="grid-item col-xs-6 col-sm-4 col-md-5">
+                  <div class="img-reponsive img-thumbnail portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                    <a href="#"><img src="assets/img/portfolio/HandyCleanHztl.jpg" alt=""/></a>
+                    <div class="overlay">
+                      <div class="icons">
+                        <a href="#" role="button" data-toggle="modal"
+                          data-target="#handyDandyModal" class="">
+                          <img src="assets/img/portfolio/HandyCleanHztl.jpg"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- class="grid" -->
+            </div> <!-- class="container-fluid" -->
+            <!-- Masonry Section End -->
+
+<!-- ///////////////////////////////////// -->
+<!-- //////////// Modal Bodies /////////// -->
+<!-- ///////////////////////////////////// -->
+
+            <!-- Raven's Racing Modal -->
+            <div class="modal fade" id="RR17Modal" tabindex="-1" role="dialog">
             <div class = "modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close"
                     data-dismiss="modal"><span>&times;</span>
                   </button>
-                  <h4 class="modal-title" id="myModalLabel">Handy Dandy</h4>
+                  <h4 class="modal-title" id="myModalLabel"> Carleton's Ravens Racing</h4>
                 </div>
                 <div class="modal-body">
-                  <!-- Change to HandyClean.jpg, watch of awkward orientation -->
-                  <img src="assets/img/portfolio/HandyCleanHztl.jpg" class="img-responsive"/>
+                  <img src="assets/img/portfolio/RR17_Frame.jpg" class="img-responsive"/>
                 </div>
                 <div class="modal-footer">
                   <div class="text-center">
-                    Handy Dandy was a robotic arm designed by three of us in the
-                    Mechanical Engineering program. I designed the hand in
-                    SolidWorks, and then 3D printed it. I also lead the
-                    development of the software that controlled the entire
-                    project. Once complete, Handy Dandy was
-                    shown off at the 2016 UW March Break Open House, where it
-                    dazzled incoming students with its ability to perform
-                    gestures and pick up objects!
+                    This is going to have a ton of cool stuff about my
+                    experience with the Carleton team. But until I write
+                    that enjoy my frame!
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Second Image -->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-              <a href="#"><img src="assets/img/portfolio/VexURatio.jpg" alt=""/></a>
-                <div class="overlay">
-                <div class="icons">
-                  <a href="#" role="button" data-toggle="modal"
-                    data-target="#secondModal" class="">
-                    <img src="assets/img/portfolio/VexURatio.jpg"/>
-                  </a>
+            <!-- Handy Dandy Modal -->
+            <!-- TODO: Add hover over animation back -->
+            <div class="modal fade" id="handyDandyModal" tabindex="-1" role="dialog">
+              <div class = "modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close"
+                      data-dismiss="modal"><span>&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Handy Dandy</h4>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Change to HandyClean.jpg, watch of awkward orientation -->
+                    <img src="assets/img/portfolio/HandyCleanHztl.jpg" class="img-responsive"/>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="text-center">
+                      Handy Dandy was a robotic arm designed by three of us in the
+                      Mechanical Engineering program. I designed the hand in
+                      SolidWorks, and then 3D printed it. I also lead the
+                      development of the software that controlled the entire
+                      project. Once complete, Handy Dandy was
+                      shown off at the 2016 UW March Break Open House, where it
+                      dazzled incoming students with its ability to perform
+                      gestures and pick up objects!
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="secondModal" tabindex="-1" role="dialog">
+            <!-- Powertrain Modal -->
+            <div class="modal fade" id="ktmModal" tabindex="-1" role="dialog">
             <div class = "modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close"
                     data-dismiss="modal"><span>&times;</span>
                   </button>
-                  <h4 class="modal-title" id="myModalLabel"> VexU Prototype</h4>
+                  <h4 class="modal-title" id="myModalLabel"> Raven's Racing: Powertrain </h4>
                 </div>
                 <div class="modal-body">
-                  <img src="assets/img/portfolio/VexU.jpg" class="img-responsive"/>
+                  <img src="assets/img/portfolio/Cherry_Exhaust.jpg" class="img-responsive"/>
                 </div>
                 <div class="modal-footer">
                   <div class="text-center">
-                    This was the loading arm of one of the prototypes I helped 
-                    build while a part of Ryerson Rams Robotics (R3). When
-                    complete, this prototype was capable of throwing 'stars'
-                    nearly a meter high.
+                    The engine we were running on the car was the KTM-450. It's
+                    a dirtbike motor which provides ~60 hp stock.
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Third Image -->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-              <a href="#"><img src="assets/img/portfolio/DoubleMyoRatio.jpg" alt=""/></a>
-                <div class="overlay">
-                <div class="icons">
-                  <a href="#" role="button" data-toggle="modal"
-                    data-target="#thirdModal" class="">
-                    <img src="assets/img/portfolio/DoubleMyoRatio.jpg"/>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" id="thirdModal" tabindex="-1" role="dialog">
+          <!-- Myo Modal -->
+          <div class="modal fade" id="myoModal" tabindex="-1" role="dialog">
             <div class = "modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -255,8 +348,8 @@
                     Engineering department. In our team of three we built a flight
                     simulator in which you could fly around with the help of
                     not one, but two Myo armbands! I worked with the in-app
-                    mechanics to try and ensure a realistic flight experience. 
-                    While not a winner, I did learn a lot about about Unity, C#, 
+                    mechanics to try and ensure a realistic flight experience.
+                    While not a winner, I did learn a lot about about Unity, C#,
                     and how painful the Myo's can be to work with.
                   </div>
                 </div>
@@ -264,108 +357,8 @@
             </div>
           </div>
 
-          <!-- Fourth Image -->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-              <a href="#"><img src="assets/img/portfolio/RyArm2Scaled.jpg" alt=""/></a>
-                <div class="overlay">
-                <div class="icons">
-                  <a href="#" role="button" data-toggle="modal"
-                    data-target="#fourthModal" class="">
-                    <img src="assets/img/portfolio/RyArm2Scaled.jpg"/>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" id="fourthModal" tabindex="-1" role="dialog">
-            <div class = "modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close"
-                    data-dismiss="modal"><span>&times;</span>
-                  </button>
-                  <h4 class="modal-title" id="myModalLabel"> Mars Rover Arm</h4>
-                </div>
-                <div class="modal-body">
-                  <img src="assets/img/portfolio/RyArm2.jpg" class="img-responsive"/>
-                </div>
-                <div class="modal-footer">
-                  <div class="text-center">
-                    This is a SolidWorks model of the Mars Rover arm I helped
-                    design while with the Ryerson Rams Robotics team. I
-                    performed some strength and weight calculations to make
-                    sure the arm could handle lifting objects, as well as
-                    taking a fall if the rover were to tip due to the rough
-                    martian terrain. I also did some research about the best
-                    materials to use for the construction of the arm.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fifth Image -->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-              <a href="#"><img src="assets/img/portfolio/Felix3Scaled.jpg" alt=""/></a>
-                <div class="overlay">
-                <div class="icons">
-                  <a href="#" role="button" data-toggle="modal"
-                    data-target="#fifthModal" class="">
-                    <img src="assets/img/portfolio/Felix3Scaled.jpg"/>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" id="fifthModal" tabindex="-1" role="dialog">
-            <div class = "modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close"
-                    data-dismiss="modal"><span>&times;</span>
-                  </button>
-                  <h4 class="modal-title" id="myModalLabel"> Felix </h4>
-                </div>
-                <div class="modal-body">
-                  <img src="assets/img/portfolio/Felix2.jpg" class="img-responsive"/>
-                </div>
-                <div class="modal-footer">
-                  <div class="text-center">
-                    Felix was an adorable platformer game built as a
-                    culminating assignment for my Gr.12 Computer Science
-                    course. The game was written from scratch using Java. It
-                    took me and my partner about four weeks to write. I got my
-                    hands dirty with a lot of stuff, including the in-game
-                    mechanics and level creation, among other things. Game development 
-                    proved to be a fun but challenging medium. Through it
-                    however, I manged to learn a lot about what goes on under
-                    the hood of many 'simple' games developed today.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sixth Image -->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
-              <a href="#"><img src="assets/img/portfolio/FurnaceScaled.jpg" alt=""/></a>
-                <div class="overlay">
-                <div class="icons">
-                  <a href="#" role="button" data-toggle="modal"
-                    data-target="#sixthModal" class="">
-                    <img src="assets/img/portfolio/FurnaceScaled.jpg"/>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" id="sixthModal" tabindex="-1" role="dialog">
+          <!-- Furnace Modal (not used)-->
+          <div class="modal fade" id="furnaceModal" tabindex="-1" role="dialog">
             <div class = "modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -384,9 +377,9 @@
                     intention of being able to melt aluminum. Using some
                     Nickel-Chromium wire for heating, cinder blocks for
                     protection, and a thermocouple to measure the temperature,
-                    we were able to get some good first results. While drawing 
-                    ~10 Amps through the Nichrome wire we achieved temperatures 
-                    of approximately 300 degrees Celcius. While high, they were 
+                    we were able to get some good first results. While drawing
+                    ~10 Amps through the Nichrome wire we achieved temperatures
+                    of approximately 300 degrees Celcius. While high, they were
                     not high enough to melt aluminum (~700 degrees).
                   </div>
                 </div>
@@ -394,7 +387,114 @@
             </div>
           </div>
 
-          <!-- Original image thing
+            <!-- VexU Modal-->
+            <div class="modal fade" id="ryersonModal" tabindex="-1" role="dialog">
+              <div class = "modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close"
+                      data-dismiss="modal"><span>&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel"> VexU Prototype</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/portfolio/VexU.jpg" class="img-responsive"/>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="text-center">
+                      This was the loading arm of one of the prototypes I helped
+                      build while a part of Ryerson Rams Robotics (R3). When
+                      complete, this prototype was capable of throwing 'stars'
+                      nearly a meter high.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hyperloop Modal -->
+            <div class="modal fade" id="waterloopModal" tabindex="-1" role="dialog">
+            <div class = "modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close"
+                    data-dismiss="modal"><span>&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel"> Hyperloop </h4>
+                </div>
+                <div class="modal-body">
+                  <img src="assets/img/portfolio/EC_Brakes_Hztl.jpg" class="img-responsive"/>
+                </div>
+                <div class="modal-footer">
+                  <div class="text-center">
+                    This is going to have some information about what
+                    the Hyperloop is, and the kind of stuff I did during
+                    my time there.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- RyArm Modal-->
+            <div class="modal fade" id="fourthModal" tabindex="-1" role="dialog">
+              <div class = "modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close"
+                      data-dismiss="modal"><span>&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel"> Mars Rover Arm</h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/portfolio/RyArm2.jpg" class="img-responsive"/>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="text-center">
+                      This is a SolidWorks model of the Mars Rover arm I helped
+                      design while with the Ryerson Rams Robotics team. I
+                      performed some strength and weight calculations to make
+                      sure the arm could handle lifting objects, as well as
+                      taking a fall if the rover were to tip due to the rough
+                      martian terrain. I also did some research about the best
+                      materials to use for the construction of the arm.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Felix Modal-->
+            <div class="modal fade" id="felixModal" tabindex="-1" role="dialog">
+              <div class = "modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close"
+                      data-dismiss="modal"><span>&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel"> Felix </h4>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/portfolio/Felix2.jpg" class="img-responsive"/>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="text-center">
+                      Felix was an adorable platformer game built as a
+                      culminating assignment for my Gr.12 Computer Science
+                      course. The game was written from scratch using Java. It
+                      took me and my partner about four weeks to write. I got my
+                      hands dirty with a lot of stuff, including the in-game
+                      mechanics and level creation, among other things. Game development
+                      proved to be a fun but challenging medium. Through it
+                      however, I manged to learn a lot about what goes on under
+                      the hood of many 'simple' games developed today.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- Original image reference
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="1.5s">
             <div class="portfolio-item">
               <a href="#"><img src="assets/img/portfolio/img6.jpg" alt=""></a>
@@ -403,8 +503,7 @@
                     <a data-lightbox="image1" href="assets/img/portfolio/img6.jpg" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
                   </div>
               </div>
-            </div>
-          </div> -->
+            </div> -->
 
         </div>
       </div>
