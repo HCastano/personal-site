@@ -288,6 +288,8 @@ a:hover {
   font-size: 20px;
 }
 
+/* Masonry */
+/* https://github.com/desandro/masonry/issues/405 */
 .img-thumbnail {
   padding: 10px;
 }

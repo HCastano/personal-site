@@ -10,7 +10,15 @@ return false;
 });
 
 // JS Required for Masonry Package to work
-// Code came form JFiddle found in: https://github.com/desandro/masonry/issues/405
+// Code came from: https://masonry.desandro.com/extras.html
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+// JS Required for Masonry Package to work
+// Code came from JFiddle found in: https://github.com/desandro/masonry/issues/405
 $(document).ready(function() {
   var $container = $('.masonry');
 
