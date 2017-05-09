@@ -9,13 +9,22 @@ return false;
 
 });
 
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+});
+
 // JS Required for Masonry Package to work
 // Code came from: https://masonry.desandro.com/extras.html
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+//$('.grid').masonry({
+//  itemSelector: '.grid-item',
+//  columnWidth: '.grid-sizer',
+//  percentPosition: true
+//});
 
 // JS Required for Masonry Package to work
 // Code came from JFiddle found in: https://github.com/desandro/masonry/issues/405
