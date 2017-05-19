@@ -19,6 +19,6 @@ var $grid = $('.grid').masonry({
 
 // Layout Masonry after all the images have loaded
 // Not doing this can throw off the layout
-$grid.imagesLoaded.progress(function() {
+$grid.imagesLoaded().progress(function() {
   $grid.masonry('layout');
 });
